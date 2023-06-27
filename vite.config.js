@@ -1,5 +1,7 @@
-import { defineConfig } from "vite";
+import { ghPages } from "vite-plugin-gh-pages";
 
-export default defineConfig({
-    publicPath: '/test-todo/'
-})
+/** @type {import('vite').UserConfig} */
+export default {
+    base: "/test-todo/",
+    plugins: [ghPages()],
+};
