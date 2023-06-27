@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 export const todoModule = {
     state: () => ({
         taskList: [{id: 0, title: 'Посмотреть фильм', isActive: false}]
@@ -13,7 +15,7 @@ export const todoModule = {
         },
 
         addTask(state, title) {
-            state.taskList = [...state.taskList, { id: state.taskList[state.taskList.length - 1].id + 1, title, isActive: false }]
+            state.taskList = [...state.taskList, { id: uuidv4(), title, isActive: false }]
         },
 
         saveTask(state, { id, value }) {

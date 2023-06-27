@@ -84,4 +84,16 @@ export default {
   .task-item__button_type_save {
     background-image: url("../assets/yes.png");
   }
+
+  @media screen and (max-width: 670px) {
+    .task-item__input {
+      width: 310px;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    .task-item__input {
+      width: 190px;
+    }
+  }
 </style>

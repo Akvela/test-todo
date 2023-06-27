@@ -24,3 +24,15 @@ input, .task {
   grid-template-columns: 100%;
   grid-gap: 5px;
 }
+
+@media screen and (max-width: 670px) {
+  main {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  main {
+    padding: 0 10px;
+  }
+}
