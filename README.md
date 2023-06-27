@@ -22,3 +22,4 @@ npm run dev
 # сборка
 npm run build
 ```
+Посмотреть проект можно по [ссылке](https://akvela.github.io/test-todo/)
